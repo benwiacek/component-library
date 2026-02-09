@@ -1,7 +1,9 @@
-export default function Badge({ children }) {
-    
+import classnames from "classnames"
+
+export default function Badge({ color, style, children }) {
+    const badgeClass = classnames(`badge`, style, color)
     return (
-        <span className="badge">
+        <span className={badgeClass}>
             {children}
         </span>
     )
