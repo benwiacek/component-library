@@ -1,0 +1,27 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+	font-size: 1rem;
+}
+
+main {
+    margin: 1rem;
+}
+
+section {
+    display: flex;
+}
+
+.badge {
+    background-color: #F3F4F6;
+    color: #1F2937;
+    padding: 0.25em 1em;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 1rem;
+    border-radius: 6px;
+}
