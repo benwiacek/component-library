@@ -1,13 +1,14 @@
 import Badge from "./Badge.jsx"
+import Banner from "./Banner.jsx"
 
 export default function App() {
 
 	return (
 		<main>
-			<h1>React Component Library</h1>
+			<h1>React Components Library</h1>
 
 			<h2>Badges</h2>
-			<section>
+			<section className="badges">
 				<Badge color="gray" variant="square">Test 1</Badge>
 				<Badge color="red" variant="square">Test 2</Badge>
 				<Badge color="yellow" style="square">Test 3</Badge>
@@ -18,7 +19,7 @@ export default function App() {
 				<Badge color="pink" variant="square">Test 8</Badge>
 			</section>
 
-			<section>
+			<section className="badges">
 				<Badge color="gray" variant="pill">Test 1</Badge>
 				<Badge color="red" variant="pill">Test 2</Badge>
 				<Badge color="yellow" variant="pill">Test 3</Badge>
@@ -30,8 +31,32 @@ export default function App() {
 			</section>
 
 			<h2>Banners</h2>
-			<section>
-				
+			<section className="banners">
+				<Banner variant ="success">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid pariatur, ipsum similique veniam.
+				</Banner>
+				<Banner variant ="success" />
+			</section>
+
+			<section className="banners">
+				<Banner variant ="warning">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid pariatur, ipsum similique veniam quo totam eius aperiam dolorum.
+				</Banner>
+				<Banner variant ="warning" />
+			</section>
+
+			<section className="banners">
+				<Banner variant ="error">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid pariatur, ipsum similique veniam quo totam eius aperiam dolorum.
+				</Banner>
+				<Banner variant ="error" />
+			</section>	
+
+			<section className="banners">
+				<Banner variant ="neutral">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid pariatur, ipsum similique veniam.
+				</Banner>
+				<Banner variant ="neutral" />
 			</section>
 
 			<h2>Cards</h2>
