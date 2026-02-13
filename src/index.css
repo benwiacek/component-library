@@ -184,6 +184,12 @@ h2 {
     margin: 2em 1em 0.5em 0;
     border-radius: 10px;
     padding: 0.75em;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    box-shadow: 0 0 5px darkgray;
+    transform: scale(1.01);
 }
 
 .card-icon-container {
@@ -206,3 +212,66 @@ h2 {
     align-items: center;
     text-align: center;
 }
+
+/* === Testimonials === */
+
+.testimonialImg {
+    background-color: #2545B8;
+    width: 1350px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    margin: 5em 0 8em 0;
+}
+
+.profile-img {
+    height: 464px;
+    margin: -2em 2em 0 4em;
+    border-radius: 14px;
+}
+
+.testi-txt {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    padding: 1em;
+    margin-top: 8em;
+}
+
+.quotes {
+    color: rgba(255, 255, 255, 0.25);
+    flex-shrink: 0;
+}
+
+.quote-txt {
+    font-size: 2.75rem;
+    margin: 0.3em 0;
+}
+
+.caption {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    margin-left: 1em;
+}
+
+.name, .title {
+    color: darkgray;
+}
+
+.name {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.title {
+    font-size: 1.2rem;
+}
+/* 
+@media (max-width: 450px) {
+    .testimonialImg {
+        flex-direction: column;
+    }
+    
+} */
