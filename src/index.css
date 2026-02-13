@@ -9,7 +9,7 @@ body {
 }
 
 main {
-    margin: 1rem;
+    margin: 1rem 2rem;
 }
 
 h1 {
@@ -104,17 +104,18 @@ h2 {
 }
 
 .icon {
-    width: 1.5rem;
-    margin-right: 0.5em;
+    margin: 0.1em 0.5em 0 0;
+    flex-shrink: 0;
+}
+
+.headline {
+    font-weight: bold;
+    margin: 0;
 }
 
 .success {
     background-color: #ECFDF5;
     color: #047857;
-}
-
-.headline {
-    font-weight: bold;
 }
 
 .head-sucess {

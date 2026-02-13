@@ -1,5 +1,4 @@
 import classnames from "classnames"
-import clsx from 'clsx'
 import { FaCheckCircle } from "react-icons/fa"
 import { FaExclamationTriangle } from "react-icons/fa"
 import { FaCircleXmark } from "react-icons/fa6"
@@ -38,7 +37,7 @@ export default function Banner({ variant, children }) {
 
     return (
         <div className={classnames(variant, "banner")}>
-            <selected.icon className={selected.iconClass}/>
+            <selected.icon className={selected.iconClass} size={16}/>
             <div>
                 <span className={selected.headlineClass}>
                     {selected.headline}
