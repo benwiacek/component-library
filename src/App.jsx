@@ -1,5 +1,8 @@
 import Badge from "./Badge.jsx"
 import Banner from "./Banner.jsx"
+import Card from "./Card.jsx"
+
+import { FaFileUpload } from "react-icons/fa"
 
 export default function App() {
 
@@ -60,8 +63,13 @@ export default function App() {
 			</section>
 
 			<h2>Cards</h2>
-			<section>
-				
+			<section className="cards">
+				<Card headline="Easy Deployment" color="#228B22">
+					Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.
+				</Card>
+				<Card headline="Hard Deployment" Icon={FaFileUpload}>
+					Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.
+				</Card>
 			</section>
 
 			<h2>Testimonials</h2>
