@@ -4,19 +4,17 @@ import { FaExclamationTriangle } from "react-icons/fa"
 import { FaCircleXmark } from "react-icons/fa6"
 import { HiInformationCircle } from "react-icons/hi"
 
-export default function Banner({ variant, children }) {
+export default function Banner({ headline, variant, children }) {
 
     const variants = {
         success: {
             icon: FaCheckCircle,
             iconClass: "icon green-mark",
-            headline: "Congratulations!",
             headlineClass: "headline head-success",
         },
         warning: {
             icon: FaExclamationTriangle,
             iconClass: "icon warning-tri",
-            headline: "Attention",
             headlineClass: "headline head-warning",
         },
         error: {
@@ -40,7 +38,7 @@ export default function Banner({ variant, children }) {
             <selected.icon className={selected.iconClass} size={16}/>
             <div>
                 <span className={selected.headlineClass}>
-                    {selected.headline}
+                    {headline}
                 </span>
                 {children && <p>{children}</p>}
             </div>
